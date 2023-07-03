@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+<body>
+
+  <header>
+    <nav>
+      <section class="left-side">
+        <div class="hamburger">
+          <img src="./images/icon-menu.svg" alt="">
+        </div>
+        <div class="logo">
+          <img src="./images/logo.svg" alt="">
+        </div>
+        <section class="drop-down ">
+          <div class="times">
+            &times;
+
+          </div>
+          <ul class="side-bar">
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+  
+        </section>
+      </section>
+      <section class="right-side">
+        <div class="cart-img">
+          <span class="cart-number small">2</span>
+          <ion-icon class="cart-icon" name="cart-outline"></ion-icon>
+        </div>
+        <div class="profile">
+          <img src="./images/image-avatar.png" alt="">
+        </div>
+      </section>
+      
+    </nav>
+    <section class="cart-display">
+      <h3>Cart</h3>
+      <hr>
+      <div class="empty">
+        <p>
+          Your cart is empty. 
+        </p>
+      </div>
+      <div class="product-display">
+        <img class="product-img" src="./images/image-product-1-thumbnail.jpg" alt="">
+        <div class="product-info">
+          <p class="product-name cart">fall limited edition sneakers</p>
+          <p class="price-tag cart">$<span class="money">125.00</span> x <span class="cart-number product">4</span> $<span class="total">3750.00</span>
+        </div>
+        <img class="trash-icon" src="./images/icon-delete.svg" alt="">
+      </div>
+      <div class="checkout-btn">
+        <a href="">
+          <button class="btn checkout">Checkout</button>
+        </a>
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <article class="hero">
+      <div class="arrows">
+        <div class="left-arrow">
+          <img src="./images/icon-previous.svg" alt="">
+        </div>
+        <div class="right-arrow">
+          <img src="./images/icon-next.svg" alt="">
+        </div>
+      </div>
+      <div class="gallery">
+        <img class="product " src="./images/image-product-1.jpg" alt="">
+        <img class="product " src="./images/image-product-2.jpg" alt="">
+        <img class="product " src="./images/image-product-3.jpg" alt="">
+        <img class="product " src="./images/image-product-4.jpg" alt="">
+      </div>
+
+      <div class="hero-display">
+        <img class="dot " src="./images/image-product-1-thumbnail.jpg" alt="" onclick="currentSlide(2)">
+        <img class="dot " src="./images/image-product-2-thumbnail.jpg" alt="" onclick="currentSlide(3)">
+        <img class="dot " src="./images/image-product-3-thumbnail.jpg" alt="" onclick="currentSlide(4)">
+        <img class="dot " src="./images/image-product-4-thumbnail.jpg" alt="" onclick="currentSlide(5)">
+      </div>
+
+
+
+      
+    </article>
+    <!-- modal for big screens -->
+    
+    
+
+
+
+    <article class="content">
+      <h4>
+        Sneaker Company
+      </h4>
+
+      <h1 class="product-name">
+        Fall Limited Edition Sneakers
+      </h1>
+
+      <p class="main-text">
+        These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they'll withstand everything the weather can offer.
+      </p>
+
+      <section class="pricing">
+        <div class="price">
+          <p class="price-tag">
+            $<span class="money">125.00</span>
+          </p>
+          <span class="percent"> 50%</span>
+        </div>
+        <p class="slashed-price">
+          $250.00
+        </p>
+        
+      </section>
+
+      <section class="cart">
+        <div class="cart-toggle">
+          <!-- <img src="./images/icon-minus.svg" alt="" class="minus"> -->
+          <div class="minus">
+            &minus;
+          </div>
+          <div class="cart-figure">
+            <p class="cart-number2">0</p>
+          </div>
+          <!-- <img src="./images/icon-plus.svg" alt="" class="plus"> -->
+          <div class="plus">
+            &plus;
+          </div>
+        </div>
+        <div class="cart-btn">
+          
+          <a href="#">
+            <button class="btn"> <ion-icon class="cart-icon white" name="cart-outline"></ion-icon> Add to cart</button>
+          </a>
+        </div>
+        <p class="warn">cannot add 0 items to cart!</p>
+      </section>
+    </article>
+  </main>
+
+
+
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Jarl_kelven</a>.
+    </div>
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <script src="./script.js"></script>
+</body>
+</html>
